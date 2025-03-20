@@ -2,10 +2,33 @@
 
 namespace App\Controllers;
 
-class Welcome_message extends BaseController
+use CodeIgniter\Controller;
+
+class Welcome_message extends Controller
 {
-    public function index(): string
+    // Metode untuk menampilkan halaman utama
+    public function index()
+{
+    $data['current_page'] = 'home'; // Menetapkan halaman saat ini
+    return view('home', $data); // Mengirim data ke tampilan
+}
+
+    public function about()
     {
-        return view('welcome_message');
+        $data['current_page'] = 'about'; // Menetapkan halaman saat ini
+        return view('about', $data); // Mengirim data ke tampilan
     }
+
+    public function classes()
+    {
+        $data['current_page'] = 'classes'; // Menetapkan halaman saat ini
+        return view('classes', $data); // Mengirim data ke tampilan
+    }
+
+    public function contact()
+    {
+        $data['current_page'] = 'contact'; // Menetapkan halaman saat ini
+        return view('contact', $data); // Mengirim data ke tampilan
+    }
+
 }

@@ -4,14 +4,14 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 
-class CallToAction extends Controller
+class FAQs extends Controller
 {
     // Metode untuk menampilkan halaman utama
     public function index()
-    {
+{
     $data['current_page'] = 'home'; // Menetapkan halaman saat ini
     return view('home', $data); // Mengirim data ke tampilan
-    }
+}
 
     public function about()
     {
@@ -31,10 +31,10 @@ class CallToAction extends Controller
         return view('contact', $data); // Mengirim data ke tampilan
     }
     
-    public function callToAction()
+    public function CallToAction()
     {
-        $data['current_page'] = 'callToAction'; // Menetapkan halaman saat ini
-        return view('callToAction', $data); // Mengirim data ke tampilan
+        $data['current_page'] = 'CallToAction'; // Menetapkan halaman saat ini
+        return view('CallToAction', $data); // Mengirim data ke tampilan
     }
 
     public function cookies()
@@ -52,3 +52,4 @@ class CallToAction extends Controller
         return view('faqs'); // Pastikan ada file view faqs.php di app/Views
     }
 }
+

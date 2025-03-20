@@ -18,7 +18,8 @@ $routes->get('about', 'Home::about'); // Halaman About Us
 $routes->get('classes', 'Home::classes'); // Halaman Classes
 $routes->get('contact', 'Home::contact'); // Halaman Contact Us
 $routes->get('testimonial', 'Home::testimonial'); // Halaman Testimonials
-$routes->get('facility', 'Home::facility'); // Halaman School Facilities
+$routes->get('classes', 'Classes::classes'); // Halaman Classes
 $routes->get('team', 'Home::team'); // Halaman Popular Teachers
-$routes->get('call-to-action', 'Home::callToAction'); // Halaman Become A Teacher
-$routes->get('appointment', 'Home::appointment'); // Halaman Make Appointment
+$routes->get('cookies', 'Cookies::cookies'); // Rute untuk Cookies
+$routes->get('help', 'Help::help'); // Rute untuk Help
+$routes->get('faqs', 'Faqs::faqs'); // Rute untuk FAQs
