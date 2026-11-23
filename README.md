@@ -8,7 +8,6 @@ Platform diskusi dan berbagi ilmu berbasis web, tempat pengguna bisa bertukar pi
 
 ## Teknologi
 - CodeIgniter 4 (PHP)
-- MySQL
 - HTML, CSS, JavaScript
 
 ## Tampilan
